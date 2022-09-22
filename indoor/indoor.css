@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+
+/** Go top **/
+.go-top {
+  position: fixed;
+  bottom: 0px;
+  right: -100%;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 500ms;
+}
+.go-top:hover {
+  /*border: 2px solid #fff;*/
+  border-radius: 50%;
+  background: rgb(71, 71, 71);
+}
+.go-top:hover span {
+  color: #fff;
+}
+.go-top > span {
+  font-size: 25px;
+  color: #000;
+}
+
+/*---Seccion Productos ---*/
+.main {
+  background: #faf8f5;
+}
+
+.title-product {
+  text-align: center;
+  font-size: 52px;
+  font-weight: 400;
+}
+.container-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+  gap: 10px;
+  margin: 20px;
+  padding: 10px;
+}
+.product{
+  width: 200px;
+  height: 350px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.product-img {
+  width: 400px;
+  height: 250px;
+  object-fit: contain;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+.product-img:hover{
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  
+}
+
+.product-description{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  padding: 5px;
+  overflow: hidden;
+  
+}
+.product__title{
+ text-align: center;
+ font-size: 24px;
+ font-weight: 100;
+}
+
+.produc-info{
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+}
+/** Seccion tips informaticos **/
+
+.container-tips {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5f1ea;
+ 
+}
+.tip{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.tip-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.tip i {
+  text-align: center;
+  font-size: 24px;
+  margin: auto;
+}
+.parrafo-tips {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 8px;
+}
+
+/** Estilo responsive para tablet **/
+
+@media screen and (min-width: 665px) {
+ 
+  .container-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap: 10px;
+  }
+  .title-product {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 400;
+    padding: 15px;
+  }
+  
+  .container-tips {
+    flex-direction: row;
+  }
+
+  .tip {
+    margin: auto;
+  }
+  .tip i {
+    font-size: 29px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+  .tip-title {
+    font-size: 19px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px, 3fr));
+    gap: 10px;
+    
+  }
+  .product{
+    width: 400px;
+    margin: auto;
+
+  }
+ 
+  .product-description {
+    
+    font-size: 22px;
+  }
+}
+

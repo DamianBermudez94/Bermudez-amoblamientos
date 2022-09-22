@@ -1,0 +1,60 @@
+/** Estilos Del footer **/
+
+.footer {
+ 
+  padding: 20px;
+  background: #151515;
+  color: #fff;
+}
+.redes-footer {
+  padding: 15px;
+  position: relative;
+  top: 0;
+  left: -10px;
+  font-size: 1.5em;
+  color: #646464;
+  margin: 0;
+  transition: all 0.5s;
+}
+.redes-footer:hover {
+  color: #fff;
+}
+.footer-txt {
+  color: #555;
+  padding: 5px 0;
+}
+.footer-link {
+  color: #555;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+
+.title-footer {
+  border-bottom: 1px dotted #555;
+  padding-bottom: 20px;
+}
+.redes {
+  font-size: 20px;
+  margin: 5px;
+}
+.container-copy{
+  text-align: center;
+  padding: 10px;
+}
+.copy {
+  color: #555;
+  margin: 10px 0;
+  padding: 10px;
+}
+@media screen and (min-width:720px) {
+  .container-footer {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+ 
+  }
+ 
+}
+
