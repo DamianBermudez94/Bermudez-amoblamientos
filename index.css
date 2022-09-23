@@ -34,8 +34,7 @@
   color: #000;
 }
 main{
-width: 100%;
-  height: 100vh;
+
   background: url("./indoor/img-indoor/imagenes-indoor/IMG-20210325-WA0038.jpg");
   background-position: center;
   background-attachment: fixed;
